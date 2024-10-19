@@ -1,1 +1,13 @@
-<p>contact works!</p>
+<form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" [(ngModel)]="contact.name" name="name" required>
+  
+    <label for="email">Email:</label>
+    <input type="email" id="email" [(ngModel)]="contact.email" name="email" required>
+  
+    <label for="message">Message:</label>
+    <textarea id="message" [(ngModel)]="contact.message" name="message" required></textarea>
+  
+    <button type="submit" (click)="submitForm()">Submit</button>
+  </form>
+  

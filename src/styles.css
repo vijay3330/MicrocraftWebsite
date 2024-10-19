@@ -1,1 +1,68 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('assets/images/background.jpg');
+    background-size: cover;   /* Cover the entire screen */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* No repeating */
+    height: 100vh; /* Full height */
+    width: 100%;
+  }
+  
+/* Style for the header */
+header {
+  background-color: #333; /* Set background color */
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between; /* Distribute space between nav and email */
+  align-items: center; /* Vertically center items */
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+/* Style for the container around the navbar */
+.navbar-container {
+  flex: 1; /* This allows the navbar to grow and fill available space */
+  display: flex;
+  justify-content: center; /* Center the navigation links */
+}
+
+/* Style for the navigation bar */
+.navbar {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  color: white; /* Text color */
+  text-decoration: none; /* Remove underline */
+  font-family: Arial, sans-serif; /* Font style */
+  font-size: 18px;
+  padding: 8px 16px;
+  transition: background-color 0.3s; /* Add a hover effect */
+}
+
+.navbar a:hover {
+  background-color: #575757; /* Change background color on hover */
+  border-radius: 4px; /* Add rounded corners */
+}
+
+.header_email a{
+  color: white;
+  font-family: Arial, sans-serif; /* Font style */
+  font-size: 16px;
+  margin-right: 20px; /* Add margin to keep it inside the screen */
+  white-space: nowrap; /* Prevent email from wrapping */
+}
+
+.header_email a:hover {
+  background-color: #575757; /* Change background color on hover */
+  border-radius: 4px; /* Add rounded corners */
+  }
