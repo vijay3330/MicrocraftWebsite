@@ -1,20 +1,32 @@
 <header>
+  <div class="logo-container">
+    <img src="assets/images/Microcraft Logo.png" alt="Company Logo" class="company-logo"> <!-- Path to your logo -->
+    <span class="company-name">Microcraft Enterprises</span>
+  </div>
   <!-- Centered navigation links -->
   <div class="navbar-container">
     <ul class="navbar">
       <li><a routerLink="/">Home</a></li>
       <li><a routerLink="/about">About Us</a></li>
       <li><a routerLink="/services">Services</a></li>
-      <li><a routerLink="/contact">Contact</a></li>
+      <li><a routerLink="/Careers">Careers</a></li>
+      <li><a routerLink="/contact">Contact</a></li>  
     </ul>
   </div>
 
-  <!-- Right-aligned email -->
+  <!-- Right-aligned email with icon -->
   <div class="header_email">
-    <a href="mailto:microcraftsatara@gmail.com">microcraftsatara@gmail.com</a>
+    <a href="mailto:microcraftsatara@gmail.com">
+      <i class="fas fa-envelope"></i> microcraftsatara@gmail.com
+    </a>
   </div>
 
+  <!-- Right-aligned mobile number with WhatsApp icon -->
   <div class="header_mobile">
-
+    <a href="https://wa.me/918668206504" target="_blank">
+      <i class="fab fa-whatsapp"></i> 8668206504
+    </a>
   </div>
 </header>
+<router-outlet></router-outlet> 
+<app-footer></app-footer>

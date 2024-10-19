@@ -25,6 +25,28 @@ header {
   box-sizing: border-box;
 }
 
+.logo-container {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 0; /* Align to the left */
+  padding: 10px;
+}
+
+.company-logo {
+  height: 50px; /* Adjust the size of your logo */
+  width: auto;
+  margin-right: 10px; /* Space between logo and name */
+}
+
+.company-name {
+  font-size: 20px; /* Adjust font size */
+  font-family: 'Arial', sans-serif; /* Font style */
+  /* color: white; Text color */
+  color: #cc4444;
+  font-weight: bold; /* Make the company name bold */
+}
+
 /* Style for the container around the navbar */
 .navbar-container {
   flex: 1; /* This allows the navbar to grow and fill available space */
@@ -54,6 +76,14 @@ header {
   border-radius: 4px; /* Add rounded corners */
 }
 
+/* Email styling */
+.header_email {
+  position: absolute;
+  right: 150px; /* Adjust as needed */
+  top: 10px;
+  white-space: nowrap;
+}
+
 .header_email a{
   color: white;
   font-family: Arial, sans-serif; /* Font style */
@@ -66,3 +96,39 @@ header {
   background-color: #575757; /* Change background color on hover */
   border-radius: 4px; /* Add rounded corners */
   }
+
+  /* Mobile number styling */
+.header_mobile {
+  position: absolute;
+  right: 20px; /* Adjust as needed */
+  top: 10px;
+  white-space: nowrap;
+}
+
+.header_mobile a {
+  color: white;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+.header_mobile a:hover {
+  text-decoration: underline;
+  background-color: #575757; /* Change background color on hover */
+  border-radius: 4px; /* Add rounded corners */
+}
+
+.header_email a, .header_mobile a {
+  color: white;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+.header_email a i, .header_mobile a i {
+  margin-right: 8px; /* Space between icon and text */
+}
+
+.header_mobile a:hover, .header_email a:hover {
+  text-decoration: underline;
+}
